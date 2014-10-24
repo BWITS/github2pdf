@@ -6,4 +6,4 @@ RUN apt-get -qqy install apt-utils
 RUN apt-get -qqy install ruby ruby-dev
 RUN apt-get -qqy install git-core
 RUN apt-get -qqy install pandoc 
-RUN apt-get install language-support-fonts-zh-hans
+#RUN apt-get install language-support-fonts-zh-hans
