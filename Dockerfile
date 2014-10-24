@@ -1,5 +1,5 @@
 # This is a comment
-FROM ubuntu:14.04
+FROM ubuntu:12.04
 MAINTAINER Bill Wang <ozbillwang@gmail.com>
 RUN apt-get -qq update
 RUN apt-get -qqy install apt-utils
