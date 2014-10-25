@@ -3,6 +3,7 @@ FROM ubuntu:12.04
 MAINTAINER Bill Wang <ozbillwang@gmail.com>
 RUN apt-get -qq update
 RUN apt-get -qqy install apt-utils
+RUN apt-get -qqy install build-essential
 RUN apt-get -qqy install ruby ruby-dev
 RUN apt-get -qqy install git-core
 RUN apt-get -qqy install apt-utils
