@@ -7,4 +7,5 @@ RUN apt-get -qqy install ruby ruby-dev
 RUN apt-get -qqy install git-core
 RUN apt-get -qqy install pandoc 
 RUN apt-get -qqy install texlive 
+RUN apt-get -qqy install language-pack-zh-hans
 # RUN apt-get install language-support-fonts-zh-hans
