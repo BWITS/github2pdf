@@ -8,4 +8,6 @@ RUN apt-get -qqy install texlive-latex-recommended # main packages
 RUN apt-get -qqy install texlive-latex-extra # package titlesec
 RUN apt-get -qqy install ttf-arphic-gbsn00lp ttf-arphic-ukai # from arphic
 RUN apt-get -qqy install ttf-wqy-microhei ttf-wqy-zenhei # from WenQuanYi
+RUN git clone git://github.com/fletcher/peg-multimarkdown.git
+RUN cd peg-multimarkdown;./update_submodules.sh;make;cp multimarkdown /usr/bin
 #RUN apt-get install language-support-fonts-zh-hans
