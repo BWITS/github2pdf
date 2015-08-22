@@ -15,4 +15,5 @@ RUN apt-get -qqy install ttf-wqy-microhei ttf-wqy-zenhei # from WenQuanYi
 RUN git clone git://github.com/fletcher/peg-multimarkdown.git
 RUN ["/bin/bash", "-c", "cd peg-multimarkdown;./update_submodules.sh;make;cp multimarkdown /usr/bin"]
 RUN apt-get install language-support-fonts-zh-hans
-CMD ["./mmd2bok"]
+CP mmd2bok /usr/bin/mmd2bok
+CMD ["mmd2bok"]
